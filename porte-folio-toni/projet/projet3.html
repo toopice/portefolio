@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet.css">
+    <title>Portfolio Toni</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
+<body>
+
+    <div id="loader">
+        <div class="loader"></div>
+    </div>
+    <div id="content" style="display:none;">
+
+        <div class="container">
+
+            <div class="box-1">
+                <img src="../image/projet3.png" alt="image" class="background-image">
+                <div class="overlay">
+                    <div>
+                    <h1 style="font-family:'Mistral';font-weight:normal;font-size:70px">Projet 3</h1>
+                    <h2>Application</h2>
+                    </div>
+                    <div class="badges">
+                        <span class="badge"></span>
+                        <span class="badge">Reacte</span>
+                        <span class="badge">node.js</span>
+                        <span class="badge">SQL</span>
+                    </div>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+
+           
+ 
+            <div class="box-2">
+                <div class="box-2-content">
+                    <h2>Déroulement</h2>
+                    <p>
+                      Dans le cadre d’un projet universitaire, nous avons conçu <strong>POVE (Patrimoine LOVE)</strong>, une application web de rencontre innovante développée avec <strong>React</strong> pour le front-end et <strong>Node.js</strong> pour le back-end. Son objectif : réconcilier les jeunes générations avec les lieux culturels en proposant des rencontres dans des musées, galeries ou sites historiques.
+                    </p>
+                
+                    <p>
+                      L’application permet aux utilisateurs de matcher selon leurs centres d’intérêt culturels, de discuter via une messagerie en temps réel, et de découvrir de nouveaux lieux à travers un algorithme de matching. La base de données utilisée est <strong>PostgreSQL</strong> et des technologies comme <strong>Socket.io</strong>, <strong>Express</strong> et <strong>Jest</strong> ont été intégrées au projet.
+                    </p>
+                
+                    <h2>Fonctionnalités principales</h2>
+                    <ul>
+                      <li>Messagerie instantanée avec WebSocket</li>
+                      <li>Algorithme de matching basé sur les préférences utilisateurs</li>
+                      <li>Exploration de lieux culturels via données ETL depuis open data</li>
+                      <li>Interface réactive en React (hooks, routes, composants modulaires)</li>
+                      <li>Back-end sécurisé avec gestion des utilisateurs et authentification (bcrypt + JWT)</li>
+                    </ul>
+                
+                    <h2>Enjeux techniques</h2>
+                    <p>
+                      Le projet a comporté plusieurs défis : conflits Git lors de la fusion de branches, accessibilité restreinte du réseau IUT (résolu via une <strong>VM Hostinger</strong> et configuration de certificats HTTPS via <strong>Certbot</strong>), et optimisation de la sécurité (pare-feu <strong>UFW</strong>, hashage des mots de passe, requêtes préparées). Une attention particulière a aussi été portée à l’<strong>accessibilité</strong> (daltonisme, contrastes, icônes compréhensibles).
+                    </p>
+                
+                    <h2>Résultats et impact</h2>
+                    <p>
+                      Nous avons recueilli des retours d’utilisateurs (via le <strong>questionnaire SUS</strong>) montrant une bonne acceptabilité de l’interface. Certaines améliorations ont été apportées suite aux retours, comme l’ajout de placeholders ou de raisons de signalement. Bien que certaines fonctionnalités prévues (comme le réglage de la distance de match) n’aient pas été finalisées, l’application est globalement fonctionnelle et bien reçue.
+                    </p>
+                
+                    <h2>Apprentissages clés</h2>
+                    <p>
+                      Ce projet a été une expérience enrichissante aussi bien sur le plan <strong>technique</strong> que <strong>humain</strong>. J'y ai renforcé mes compétences en React, en travail d’équipe agile, en gestion de projet, et en sécurité web (HTTPS, base PostgreSQL sécurisée, pare-feu, mises à jour automatiques, etc.). Il m’a aussi appris l’importance de l’écoute utilisateur et de l’adaptabilité face aux imprévus techniques et organisationnels.
+                    </p>
+                </div>
+            </div>
+              
+            
+            <div class="box-3">
+                <a href="../index.html"><button>Retour</button></a>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Portfolio Toni. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }, 1000);
+        });
+    </script>
+
+</body>
+</html>
