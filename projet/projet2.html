@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet.css">
+    <title>Portfolio Toni</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
+<body>
+
+    <div id="loader">
+        <div class="loader"></div>
+    </div>
+    <div id="content" style="display:none;">
+
+        <div class="container">
+
+            <div class="box-1">
+                <img src="../image/projet2.jpg" alt="image" class="background-image">
+                <div class="overlay">
+                    <div>
+                    <h1 style="font-family:'Mistral';font-weight:normal;font-size:70px">Projet 2</h1>
+                    <h2>machine learning</h2>
+                    </div>
+                    <div class="badges">
+                        <span class="badge">Jave</span>
+                    </div>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+
+           
+ 
+            <div class="box-2">
+                <div class="box-2-content">
+                    <h2>Déroulement</h2>
+                    <p>
+                        Dans le cadre de ce projet, j'ai développé un script en Java intégrant des concepts de machine learning. L'objectif principal était de concevoir un programme capable de classer automatiquement des articles de presse selon différents genres journalistiques (par exemple : sport, politique, économie, culture, etc.), et ce, avec une rapidité et une précision optimales.
+                    </p>
+                    <p>
+                        Pour cela, j'ai utilisé un ensemble d'articles d'entraînement préalablement labellisés, que j'ai exploité pour entraîner un algorithme de classification. Le programme analysait le contenu textuel des articles (titres, mots-clés, structures grammaticales) afin d'identifier les caractéristiques propres à chaque genre.
+                    </p>
+                    <p>
+                        Une fois le modèle entraîné, le script évaluait de nouveaux articles et leur attribuait une catégorie. Un système de barème avait été mis en place : si le taux d'erreurs dépassait un certain seuil prédéfini, une sanction automatique était appliquée sous forme de perte de points. Ce mécanisme permettait d'encourager l'efficacité du modèle tout en contrôlant sa précision.
+                    </p>
+                    <p>
+                        Ce projet m’a permis de consolider mes compétences en Java, en traitement de texte (NLP - Natural Language Processing), ainsi qu’en conception d’algorithmes de classification supervisée. Il m’a également sensibilisé à l’importance de la qualité des données d'entraînement et du calibrage des seuils de performance.
+                    </p>
+                </div>
+            </div>
+              
+            
+            <div class="box-3">
+                <a href="../index.html"><button>Retour</button></a>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Portfolio Toni. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }, 1000);
+        });
+    </script>
+
+</body>
+</html>

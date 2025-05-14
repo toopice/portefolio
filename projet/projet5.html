@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet.css">
+    <title>Portfolio Toni</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
+<body>
+
+    <div id="loader">
+        <div class="loader"></div>
+    </div>
+    <div id="content" style="display:none;">
+
+        <div class="container">
+
+            <div class="box-1">
+                <img src="../image/projet5.jpg" alt="image" class="background-image">
+                <div class="overlay">
+                    <div>
+                    <h1 style="font-family:'Mistral';font-weight:normal;font-size:70px">Projet 5</h1>
+                    <h2>Base de donnée</h2>
+                    </div>
+                    <div class="badges">
+                        <span class="badge" style="color: black;">SQL</span>
+                        <span class="badge" style="color: black;">Talend</span>
+                        <span class="badge" style="color: black;">R studio</span>
+                    </div>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="box-2-content">
+                  <h3>Projet de Traitement de Données - ETL et Analyse (Talend, SQL, R)</h3>
+                  <p>
+                    Ce projet visait à concevoir une nouvelle base de données à partir de jeux de données existants, en assurant leur transformation, leur nettoyage et leur intégration. Nous avons utilisé l’outil Talend pour réaliser les processus d’ETL (Extraction, Transformation, Chargement), en partant de deux cas d’usage : le dataset du <strong>Titanic</strong> et celui du <strong>Nutri-Score</strong>.
+                  </p>
+                  <ul>
+                  
+                    <li>
+                      <strong>Objectif technique :</strong> améliorer la qualité des données, assurer leur cohérence, et structurer les tables relationnelles pour faciliter leur exploitation.
+                    </li>
+                    <li>
+                      <strong>Cas Titanic :</strong> transformation des données passagers (âge, classe, genre, statut de survie), nettoyage des valeurs manquantes, et structuration de la base pour l’analyse statistique des survivants.
+                    </li>
+                    <li>
+                      <strong>Cas Nutri-Score :</strong> normalisation des informations nutritionnelles, calcul du score nutritionnel selon les critères officiels, et stockage optimisé pour des analyses futures.
+                    </li>
+                    <li>
+                      <strong>Analyse de données avec R :</strong> génération de visualisations (diagrammes, courbes de distribution, histogrammes) pour mieux comprendre les corrélations entre les variables (ex : lien entre âge et survie, ou niveau calorique et Nutri-Score).
+                    </li>
+                  </ul>
+                  <p>
+                    Ce projet m’a permis de consolider mes compétences en manipulation de données, en modélisation relationnelle, et en visualisation statistique à l’aide d’outils professionnels largement utilisés dans le domaine de la data.
+                  </p>
+                </div>
+              </div>
+        
+              
+            
+            <div class="box-3">
+                <a href="../index.html"><button>Retour</button></a>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Portfolio Toni. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }, 1000);
+        });
+    </script>
+
+</body>
+</html>
