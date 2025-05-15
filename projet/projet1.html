@@ -39,52 +39,30 @@
            
  
             <div class="box-2">
+                <div class="box-2-content">
+                    <h3>Projet de Réseaux Virtuels</h3>
                     <p>
-                        <h2>Déroulement</h2>
-                        <p>Durant ce projet, j'ai créé un réseau virtuel.</p>
-                        
+                        Dans le cadre de ce projet, j'ai conçu et mis en place une infrastructure réseau virtuelle complète. L'objectif principal était de créer un environnement réseau sécurisé et fonctionnel, capable de fournir des services essentiels tout en garantissant la sécurité des données et des flux réseau.
                     </p>
-
-                    
-                            <h3>Objectifs du projet</h3>
-                            <p>
-                                L'infrastructure devait fournir aux utilisateurs une connectivité réseau fiable ainsi qu'un ensemble de services essentiels (DNS, DHCP, Web, Wiki, etc.), tout en garantissant la sécurité des données, des machines et des flux réseau. Le projet incluait également la création d'un Wiki documentant l'ensemble des choix techniques, en lien avec les contraintes de qualité et de sécurité.
-                            </p>
-                    
-                            <h3>Infrastructure mise en place</h3>
-                            <p>
-                                J'ai choisi de réaliser une infrastructure de niveau 2 (améliorée) reposant sur plusieurs réseaux segmentés et interconnectés par un routeur virtuel. Voici les principaux composants :
-                            </p>
+                    <ul>
+                        <li><strong>Objectif technique :</strong> concevoir une infrastructure de niveau 2 (améliorée) reposant sur plusieurs réseaux segmentés et interconnectés par un routeur virtuel.</li>
+                        <li><strong>Services mis en place :</strong>
                             <ul>
-                                <li><strong>Serveur DHCP</strong> : attribution automatique des adresses IP selon les plages définies par réseau.</li>
-                                <li><strong>DNS Interne</strong> : résolution des noms dans le réseau local pour une gestion centralisée des machines internes.</li>
-                                <li><strong>DNS Externe</strong> : accès aux domaines publics via un DNS relais avec mise en cache.</li>
-                                <li><strong>Serveur Web (Nginx)</strong> : hébergement des applications internes en HTTPS, incluant le Wiki.</li>
-                                <li><strong>Wiki.js</strong> : plateforme de documentation collaborative connectée à l'annuaire LDAP pour l'authentification.</li>
-                                <li><strong>Serveur LDAP (OpenLDAP)</strong> : gestion centralisée des utilisateurs et des permissions.</li>
-                                <li><strong>Routeur virtuel</strong> : interconnexion entre le réseau des utilisateurs, des administrateurs, des serveurs, et une DMZ.</li>
-                                <li><strong>Pare-feu avancé (nftables)</strong> : application stricte du principe de moindre privilège sur chaque interface réseau.</li>
+                                <li>Serveur DHCP pour l'attribution automatique des adresses IP</li>
+                                <li>DNS Interne pour la résolution des noms dans le réseau local</li>
+                                <li>DNS Externe pour l'accès aux domaines publics</li>
+                                <li>Serveur Web (Nginx) pour l'hébergement des applications internes</li>
+                                <li>Wiki.js pour la documentation collaborative</li>
+                                <li>Serveur LDAP pour la gestion centralisée des utilisateurs</li>
                             </ul>
-                    
-                            <h3>Outils et technologies utilisés</h3>
-                            <p>
-                                L'ensemble de l'infrastructure a été déployé sur Proxmox VE à l'aide de machines virtuelles tournant principalement sous Debian. Les services réseau reposaient sur BIND9 (DNS), Kea (DHCP), PostgreSQL (SGBD), systemd-timesyncd (NTP), et OpenLDAP pour l'authentification centralisée. Le pare-feu a été configuré avec nftables et la supervision réseau réalisée via Zabbix.
-                            </p>
-                    
-                            <h3>Aspects sécuritaires</h3>
-                            <p>
-                                La sécurité a été un axe fort du projet. Toutes les connexions administratives se faisaient via SSH avec authentification par clés. Le Wiki était uniquement accessible en HTTPS avec un certificat SSL émis par une autorité de certification interne. L'infrastructure DNS a été séparée en interne/externe pour limiter l'exposition des ressources. Un routage restrictif et des règles de pare-feu adaptées ont été appliqués à chaque zone réseau.
-                            </p>
-                    
-                            <h3>Automatisation et supervision</h3>
-                            <p>
-                                Plusieurs scripts ont été développés pour automatiser l'installation, la configuration et les tests des services (ping, accès HTTP/LDAP, résolution DNS, etc.). Une supervision de l'état des machines et services a été mise en place via Zabbix avec alertes en cas d'anomalie.
-                            </p>
-                    
-                            <h3>Conclusion</h3>
-                            <p>
-                                Ce projet m'a permis d'approfondir mes compétences en administration système, en sécurité réseau, en virtualisation et en automatisation. Il m'a confronté à des problématiques réelles d'architecture et de cohérence des services, tout en m'obligeant à documenter mes choix dans un Wiki à destination d'utilisateurs et d'administrateurs.
-                            </p>
+                        </li>
+                        <li><strong>Sécurité :</strong> mise en place d'un pare-feu avancé (nftables), authentification SSH par clés, certificats SSL, et séparation DNS interne/externe.</li>
+                        <li><strong>Supervision :</strong> implémentation d'une solution de monitoring via Zabbix avec système d'alertes.</li>
+                    </ul>
+                    <p>
+                        Ce projet m'a permis d'approfondir mes compétences en administration système, en sécurité réseau, en virtualisation et en automatisation. Il m'a confronté à des problématiques réelles d'architecture et de cohérence des services, tout en m'obligeant à documenter mes choix dans un Wiki à destination d'utilisateurs et d'administrateurs.
+                    </p>
+                </div>
             </div>
             
 
