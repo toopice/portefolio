@@ -264,7 +264,6 @@ button:active{
         margin-bottom: 6px;
     }
     .box-2 {
-        width: 98%;
         margin-left: 1%;
         margin-right: 1%;
         padding: 24px 10px;
@@ -285,7 +284,6 @@ button:active{
     }
     .box-2-content ul {
         padding-left: 20px;
-        width: 100%;
     }
     .box-2-content li {
         margin-bottom: 10px;
