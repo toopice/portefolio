@@ -24,59 +24,43 @@
                 <div class="overlay">
                     <div>
                     <h1 style="font-family:'Mistral', cursive, sans-serif;font-weight:normal;font-size:70px">Projet 4</h1>
-                    <h2>Boutique en ligne</h2>
+                    <h2>Boutique en ligne Symfony</h2>
                     </div>
                     <div class="badges">
                         <span class="badge">PHP</span>
                         <span class="badge">Symfony</span>
+                        <span class="badge">Twig</span>
+                        <span class="badge">Doctrine</span>
                     </div>
-                </div>
-                <div>
-                    
                 </div>
             </div>
 
-           
- 
-
             <div class="box-2">
                 <div class="box-2-content">
-                  <h3>Symfony - Site e-commerce</h3>
-                  <p>
-                    Dans le cadre de ce projet Symfony (v7.2), j'ai développé un site e-commerce à partir d'un squelette fourni. Ce travail m'a permis de renforcer ma compréhension du framework Symfony, notamment en ce qui concerne les routes, les contrôleurs, le système de templates Twig et la structuration d'un projet web MVC. Voici les principales réalisations :
-                  </p>
-                  <ul>
-                    
-                    <li>
-                      <strong>Structure du site :</strong> mise en place d'un layout principal <code>base.html.twig</code> avec des blocs personnalisables (titre, contenu, scripts, styles), et inclusion d'une barre de navigation modulaire via <code>navbar.html.twig</code>.
-                    </li>
-                    <li>
-                      <strong>Pages statiques et dynamiques :</strong> création d'une page de contact accessible via une route dédiée (<code>/contact</code>), avec un template Twig spécifique.
-                    </li>
-                    <li>
-                      <strong>Affichage dynamique :</strong> utilisation d'un service Symfony (<code>BoutiqueService</code>) simulant une base de données via des tableaux JSON en dur pour afficher les catégories et produits.
-                    </li>
-                    <li>
-                      <strong>Routage dynamique :</strong> mise en place de routes pour afficher les catégories (<code>/boutique</code>) et les produits associés (<code>/rayon/{idCategorie}</code>) via un contrôleur spécifique (<code>BoutiqueController</code>).
-                    </li>
-                    <li>
-                      <strong>Templates Twig :</strong> développement des vues <code>index.html.twig</code> et <code>rayon.html.twig</code> pour afficher dynamiquement les contenus, avec intégration fluide des liens internes.
-                    </li>
-                    <li>
-                      <strong>Connexion à une base de données SQL :</strong> intégration d'une base SQL pour stocker les informations sur les produits et les catégories, en utilisant Doctrine ORM pour gérer les entités et leurs relations.
-                    </li>
-                    <li>
-                      <strong>Gestion des utilisateurs :</strong> mise en place d'un système d'inscription et de connexion pour permettre aux utilisateurs de créer un compte, gérer leur panier et suivre leurs commandes. Les données sont persistées en base.
-                    </li>
-                  </ul>
-                  <p>
-                    Ce TP a été très formateur et m'a permis de maîtriser les fondements du développement web avec Symfony tout en appliquant les bonnes pratiques de modularité, de routage, de templating et de gestion de données.
-                  </p>
+                    <h3>Projet Symfony - Site e-commerce</h3>
+                    <p>
+                        Dans le cadre de ce projet Symfony (v7.2), j'ai développé un site e-commerce à partir d'un squelette fourni. Ce travail m'a permis de renforcer ma compréhension du framework Symfony, notamment en ce qui concerne les routes, les contrôleurs, le système de templates Twig et la structuration d'un projet web MVC.
+                    </p>
+                    <ul>
+                        <li><strong>Objectif technique :</strong> créer une boutique en ligne complète avec Symfony, intégrant une gestion des utilisateurs, un panier d'achat et une base de données.</li>
+                        <li><strong>Fonctionnalités développées :</strong>
+                            <ul>
+                                <li>Structure MVC avec layout principal et navigation modulaire</li>
+                                <li>Pages statiques et dynamiques (contact, catalogue, produits)</li>
+                                <li>Affichage dynamique des catégories et produits</li>
+                                <li>Système de routage pour la navigation entre les sections</li>
+                                <li>Gestion des utilisateurs (inscription, connexion, panier)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Technologies utilisées :</strong> PHP, Symfony 7.2, Twig, Doctrine ORM, SQL, JSON.</li>
+                        <li><strong>Défis relevés :</strong> mise en place de l'architecture MVC, intégration de la base de données, gestion des sessions utilisateurs et implémentation du panier d'achat.</li>
+                    </ul>
+                    <p>
+                        Ce projet a été très formateur et m'a permis de maîtriser les fondements du développement web avec Symfony tout en appliquant les bonnes pratiques de modularité, de routage, de templating et de gestion de données.
+                    </p>
                 </div>
-              </div>
-              
-              
-            
+            </div>
+
             <div class="box-3">
                 <a href="/index.html#projets"><button>Retour</button></a>
             </div>
@@ -93,7 +77,7 @@
             setTimeout(function () {
                 document.getElementById("loader").style.display = "none";
                 document.getElementById("content").style.display = "block";
-            }, 1000);
+            }, 550);
         });
     </script>
 

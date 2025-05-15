@@ -24,59 +24,43 @@
                 <div class="overlay">
                     <div>
                     <h1 style="font-family:'Mistral', cursive, sans-serif;font-weight:normal;font-size:70px">Projet 3</h1>
-                    <h2>Application</h2>
+                    <h2>Application Web de Rencontre Culturelle</h2>
                     </div>
                     <div class="badges">
                         <span class="badge">React</span>
                         <span class="badge">Node.js</span>
-                        <span class="badge">SQL</span>
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">Socket.io</span>
                     </div>
-                </div>
-                <div>
-                    
                 </div>
             </div>
 
-           
- 
             <div class="box-2">
                 <div class="box-2-content">
-                    <h2>Déroulement</h2>
+                    <h3>Projet POVE (Patrimoine LOVE)</h3>
                     <p>
-                      Dans le cadre d'un projet universitaire, nous avons conçu <strong>POVE (Patrimoine LOVE)</strong>, une application web de rencontre innovante développée avec <strong>React</strong> pour le front-end et <strong>Node.js</strong> pour le back-end. Son objectif : réconcilier les jeunes générations avec les lieux culturels en proposant des rencontres dans des musées, galeries ou sites historiques.
+                        Dans le cadre d'un projet universitaire, nous avons conçu POVE, une application web de rencontre innovante développée avec React pour le front-end et Node.js pour le back-end. Son objectif : réconcilier les jeunes générations avec les lieux culturels en proposant des rencontres dans des musées, galeries ou sites historiques.
                     </p>
-                
-                    <p>
-                      L'application permet aux utilisateurs de matcher selon leurs centres d'intérêt culturels, de discuter via une messagerie en temps réel, et de découvrir de nouveaux lieux à travers un algorithme de matching. La base de données utilisée est <strong>PostgreSQL</strong> et des technologies comme <strong>Socket.io</strong>, <strong>Express</strong> et <strong>Jest</strong> ont été intégrées au projet.
-                    </p>
-                
-                    <h2>Fonctionnalités principales</h2>
                     <ul>
-                      <li>Messagerie instantanée avec WebSocket</li>
-                      <li>Algorithme de matching basé sur les préférences utilisateurs</li>
-                      <li>Exploration de lieux culturels via données ETL depuis open data</li>
-                      <li>Interface réactive en React (hooks, routes, composants modulaires)</li>
-                      <li>Back-end sécurisé avec gestion des utilisateurs et authentification (bcrypt + JWT)</li>
+                        <li><strong>Objectif technique :</strong> créer une plateforme de rencontre culturelle avec une interface moderne et intuitive, intégrant des fonctionnalités de messagerie en temps réel et un système de matching intelligent.</li>
+                        <li><strong>Fonctionnalités développées :</strong>
+                            <ul>
+                                <li>Messagerie instantanée avec WebSocket</li>
+                                <li>Algorithme de matching basé sur les préférences utilisateurs</li>
+                                <li>Exploration de lieux culturels via données ETL depuis open data</li>
+                                <li>Interface réactive en React (hooks, routes, composants modulaires)</li>
+                                <li>Back-end sécurisé avec gestion des utilisateurs et authentification</li>
+                            </ul>
+                        </li>
+                        <li><strong>Technologies utilisées :</strong> React, Node.js, PostgreSQL, Socket.io, Express, Jest, bcrypt, JWT, UFW, Certbot.</li>
+                        <li><strong>Défis relevés :</strong> gestion des conflits Git, configuration du réseau IUT via VM Hostinger, optimisation de la sécurité, et amélioration de l'accessibilité.</li>
                     </ul>
-                
-                    <h2>Enjeux techniques</h2>
                     <p>
-                      Le projet a comporté plusieurs défis : conflits Git lors de la fusion de branches, accessibilité restreinte du réseau IUT (résolu via une <strong>VM Hostinger</strong> et configuration de certificats HTTPS via <strong>Certbot</strong>), et optimisation de la sécurité (pare-feu <strong>UFW</strong>, hashage des mots de passe, requêtes préparées). Une attention particulière a aussi été portée à l'<strong>accessibilité</strong> (daltonisme, contrastes, icônes compréhensibles).
-                    </p>
-                
-                    <h2>Résultats et impact</h2>
-                    <p>
-                      Nous avons recueilli des retours d'utilisateurs (via le <strong>questionnaire SUS</strong>) montrant une bonne acceptabilité de l'interface. Certaines améliorations ont été apportées suite aux retours, comme l'ajout de placeholders ou de raisons de signalement. Bien que certaines fonctionnalités prévues (comme le réglage de la distance de match) n'aient pas été finalisées, l'application est globalement fonctionnelle et bien reçue.
-                    </p>
-                
-                    <h2>Apprentissages clés</h2>
-                    <p>
-                      Ce projet a été une expérience enrichissante aussi bien sur le plan <strong>technique</strong> que <strong>humain</strong>. J'y ai renforcé mes compétences en React, en travail d'équipe agile, en gestion de projet, et en sécurité web (HTTPS, base PostgreSQL sécurisée, pare-feu, mises à jour automatiques, etc.). Il m'a aussi appris l'importance de l'écoute utilisateur et de l'adaptabilité face aux imprévus techniques et organisationnels.
+                        Ce projet a été une expérience enrichissante aussi bien sur le plan technique que humain. J'y ai renforcé mes compétences en React, en travail d'équipe agile, en gestion de projet, et en sécurité web. Il m'a aussi appris l'importance de l'écoute utilisateur et de l'adaptabilité face aux imprévus techniques et organisationnels.
                     </p>
                 </div>
             </div>
-              
-            
+
             <div class="box-3">
                 <a href="/index.html#projets"><button>Retour</button></a>
             </div>
@@ -93,7 +77,7 @@
             setTimeout(function () {
                 document.getElementById("loader").style.display = "none";
                 document.getElementById("content").style.display = "block";
-            }, 1000);
+            }, 550);
         });
     </script>
 
