@@ -344,6 +344,7 @@ button:active{
     }
     .box-2-content {
         padding: 0;
+        padding-right: 9vw !important;
     }
     .box-2-content h3 {
         font-size: 22px;
