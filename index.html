@@ -9,6 +9,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
         @import url('/mistral-webfont/style.css');
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("8R3rYW5f5YPP6RU65"); // Remplacez par votre clé publique EmailJS
+        })();
+    </script>
 </head>
 <body>
 
@@ -219,7 +225,7 @@
 
 
                 <div class="box-4-content">
-                    <form action="">
+                    <form id="contact-form" onsubmit="return sendEmail(event)">
                         <input type="text" id="name" name="name" placeholder="Nom" required><br><br>
                 
                         <input type="email" id="email" name="email" placeholder="Email" required><br><br>
@@ -244,6 +250,27 @@
                 document.getElementById("content").style.display = "block";
             }, 550);
         });
+
+        function sendEmail(e) {
+            e.preventDefault();
+
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                message: document.getElementById('message').value,
+                to_email: 'reytoni36@gmail.com'
+            };
+
+            emailjs.send('service_cogbx4t', 'template_xy9ajga', templateParams)
+                .then(function(response) {
+                    alert('Email envoyé avec succès!');
+                    document.getElementById('contact-form').reset();
+                }, function(error) {
+                    alert('Erreur lors de l\'envoi de l\'email. Veuillez réessayer.');
+                });
+
+            return false;
+        }
     </script>
 
 </body>
